@@ -1,0 +1,35 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+:root {
+    /* Primary Colors */
+    --clrs-primary-Cyan: #2ab2af;
+    --clrs-secondary-Yellow: #c0df34;
+
+    /* Neutral Colors */
+    --clrs-neutral-LightGray: #e5eff5;
+    --clrs-neutral-GrayishBlue: #98a6bd;
+
+    /* Screen Widths */
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+}
+
+
+body {
+    font-family: 'Karla', sans-serif;  
+}
+
+.container {
+    width: 80%;
+    max-width: var(--mobile-width);
+    margin: auto;
+}
