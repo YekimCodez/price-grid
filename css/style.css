@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: 1.5;
 }
 
 :root {
@@ -31,5 +30,20 @@ body {
 .container {
     width: 80%;
     max-width: var(--mobile-width);
+    padding: 1em;
     margin: auto;
+}
+
+.hero {
+    background: #ffffff;
+    color: var(--clrs-primary-Cyan);
+    padding: 1em;
+}
+
+.intro, .money__back {
+    margin-bottom: 1em;
+}
+
+.money__back {
+    color: var(--clrs-secondary-Yellow);
 }
