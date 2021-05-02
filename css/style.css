@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 1.0625rem;
     box-sizing: border-box;
 }
 
@@ -29,33 +30,40 @@ html, body {
     font-family: 'Karla', sans-serif;  
 }
 
-.container {
-    display: grid;
-    place-content: center;
-    width: 80%;
-    height: 100vh;
-    max-width: var(--mobile-width);
-    border: none;
-    border-radius: 10px;
-    margin: auto;
-}
-
 .btn {
     display: inline-block;
     text-decoration: none;
     background: var(--clrs-secondary-Yellow);
-    padding: 1em 2.5em;
+    padding: 1em 2em;
     margin: 1.5em 0 0;
-    font-size: 1.3rem;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.1);
+}
+
+.container {
+    display: grid;
+    place-content: center;
+    width: 80%;
+    max-width: var(--mobile-width);
+    height: auto;
+    margin: auto;
 }
 
 .hero {
     background: #ffffff;
     color: var(--clrs-primary-Cyan);
     padding: 1em;
+    line-height: 1.6;
 }
 
-.tile__title {
+.title {
     margin-bottom: 1em;
 }
 
@@ -69,14 +77,36 @@ html, body {
     background: var(--clrs-cyan-lite);
     color: #ffffff;
     padding: 1em;
+    line-height: 1.6;
 }
 
-.intro, .money__back, .why__us__content {
+.price__tag {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.price {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.intro, .money__back, .why__us {
     width: 60%;
     margin-bottom: 1em;
 }
 
 .money__back {
     color: var(--clrs-secondary-Yellow);
+}
+
+footer {
+    background: #ffffff;
+    color: var(--clrs-primary-Cyan);
+    padding: 1em;
+    line-height: 2;
+}
+
+footer a {
+    text-decoration: none;
 }
 
