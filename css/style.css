@@ -11,6 +11,7 @@
 :root {
     /* Primary Colors */
     --clrs-primary-Cyan: #2ab2af;
+    --clrs-cyan-lite: #45d3d1;
     --clrs-secondary-Yellow: #c0df34;
 
     /* Neutral Colors */
@@ -23,15 +24,29 @@
 }
 
 
-body {
+html, body {
+    background-color: var(--clrs-neutral-LightGray);
     font-family: 'Karla', sans-serif;  
 }
 
 .container {
+    display: grid;
+    place-content: center;
     width: 80%;
+    height: 100vh;
     max-width: var(--mobile-width);
-    padding: 1em;
+    border: none;
+    border-radius: 10px;
     margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--clrs-secondary-Yellow);
+    padding: 1em 2.5em;
+    margin: 1.5em 0 0;
+    font-size: 1.3rem;
 }
 
 .hero {
@@ -40,10 +55,28 @@ body {
     padding: 1em;
 }
 
-.intro, .money__back {
+.tile__title {
+    margin-bottom: 1em;
+}
+
+.left__window {
+    background: var(--clrs-primary-Cyan);
+    color: #ffffff;
+    padding: 1em;
+}
+
+.right__window {
+    background: var(--clrs-cyan-lite);
+    color: #ffffff;
+    padding: 1em;
+}
+
+.intro, .money__back, .why__us__content {
+    width: 60%;
     margin-bottom: 1em;
 }
 
 .money__back {
     color: var(--clrs-secondary-Yellow);
 }
+
