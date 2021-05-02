@@ -54,6 +54,9 @@ html, body {
     max-width: var(--mobile-width);
     height: auto;
     margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 1px;
 }
 
 .hero {
